@@ -71,7 +71,7 @@ const reducer = (state, action) => {
         }),
       };
     case SET_HIGHLIGHTED_QUOTE:
-      return { ...state, highlightedQuote: action.payload };
+      return { ...state, highlightedQuote: state.highlightedQuote === action.payload ? null : action.payload };
     case TOGGLE_VISIBILITY:
       return { ...state };
     default:
@@ -104,6 +104,7 @@ export default function App() {
   };
   const setHighlightedQuote = (id) => {
     // 👇 implement
+    dispatch({ type: SET_HIGHLIGHTED_QUOTE, payload: id })
   };
   const toggleVisibility = () => {
     // 👇 implement
@@ -118,6 +119,7 @@ export default function App() {
         highlightedQuote={state.highlightedQuote}
         deleteQuote={deleteQuote}
         editQuoteAuthenticity={editQuoteAuthenticity}
+        setHighlightedQuote={setHighlightedQuote}
       />
       <QuoteForm createQuote={createQuote} />
     </div>
