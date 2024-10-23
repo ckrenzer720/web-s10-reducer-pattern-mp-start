@@ -18,7 +18,7 @@
 
 ## ✨ Instructions
 
-Welcome to Module 1 Project! In this module you learned to use the Reducer hook to pull state calculations out of components and into reducer functions. In this project you will design state, build reducers and wire action dispatchers to the JSX, to allow users of your app to read, highlight and delete inspirational quotes, as well as create their own.
+Welcome to Mo=dule 1 Project! In this module you learned to use the Reducer hook to pull state calculations out of components and into reducer functions. In this project you will design state, build reducers and wire action dispatchers to the JSX, to allow users of your app to read, highlight and delete inspirational quotes, as well as create their own.
 
 ### 🥷 Tasks
 
